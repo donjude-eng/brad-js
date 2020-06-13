@@ -2,14 +2,16 @@
 
 06: Intro 
 
+```
 Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
-2 .array. objects
+2.array. objects
 3.console.error
 4.object,tables
+```
 
 07: Variable
- a: 2e can reassign using variable var or let
- b:Variable name (letter, -, number and &.
+ ```a: 2e can reassign using variable var or let
+ b:Variable name (letter, -, number and &.```
  
  08-Datatypes
  a - primitive data types
@@ -63,3 +65,28 @@ include --If something is available in the string.
  function declaration
  ananymouus function
  invokable function
+ 
+ 19--General loops
+ 
+ a. for loop
+ b. for each
+ c. ID map
+ 
+ 20 --Window object
+ a- Document object model
+ --Select element
+ --style
+ --changes mode
+ --This is all for working with the UI.
+ The window object is the part of client side.
+ 
+ ---Javascript runtime runs as a standalone process in our machine or in our computer.
+ ---Computer systems is the environment --In nodejs
+ 
+ --Client side --> Browser is the Global environment --> Node js in chrome use both the javascript environment called V8.
+ 
+ --val location -->details address , href, origin , protocol.
+ --navigator object
+ 
+ 21- Scope
+ let and const has the block level scope and var has the function scope.
