@@ -1,8 +1,8 @@
 # brad-js 
 
+```
 06: Intro 
 
-```
 Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
 2.array. objects
 3.console.error
