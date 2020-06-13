@@ -1,14 +1,14 @@
 # brad-js 
 
- a: Intro 
+06: Intro 
 
 Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
 2 .array. objects
 3.console.error
 4.object,tables
 
-b: Variable
- a: We can reassign using variable var or let
+07: Variable
+ a: 2e can reassign using variable var or let
  b:Variable name (letter, -, number and &.
  
  08-Datatypes
