@@ -1,14 +1,21 @@
+02_JavaScript_Fundamentals
 # brad-js
 
- a: Intro 
+06: Intro 
+master
 
 Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
 2 .array. objects
 3.console.error
 4.object,tables
 
+ 02_JavaScript_Fundamentals
 b: Variable
  a: We can reassign using variable var or let
+
+07: Variable
+ a: 2e can reassign using variable var or let
+ master
  b:Variable name (letter, -, number and &.
  
  08-Datatypes
