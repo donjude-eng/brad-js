@@ -1,7 +1,5 @@
 # brad-js
 
-# brad-js 
-
  a: Intro 
 
 Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
