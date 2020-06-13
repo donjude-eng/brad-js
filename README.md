@@ -7,11 +7,11 @@ Document.query selector ('h1'). style color (red) (numbers will be blue and stri
 2.array. objects
 3.console.error
 4.object,tables
-```
+
 
 07: Variable
- ```a: 2e can reassign using variable var or let
- b:Variable name (letter, -, number and &.```
+ a: 2e can reassign using variable var or let
+ b:Variable name (letter, -, number and &.
  
  08-Datatypes
  a - primitive data types
@@ -90,3 +90,4 @@ include --If something is available in the string.
  
  21- Scope
  let and const has the block level scope and var has the function scope.
+ ```
