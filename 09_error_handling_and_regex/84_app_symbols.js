@@ -5,11 +5,17 @@ re = /hello/i;
 
 // Metacharacter symbols
 re = /^h/i;    // Must start with
-re = /d$/i;    // Must ends with
+re = / world$/i;    // Must ends with
+re = /^hello$/i;    //Must begin and end with
+re = /h.llo/i;      //Matches any ONE character
+re = /h*llo/i;      //Matches any character 0 or more times
+
+re = /gre?a?y/i  // Optional character
+re = /gre?a?y\?/i;  //Escape charcter
 
 
 //String to match
-const str = 'Hello world'
+const str = 'Gray?';
 
 //Log result
 const result = re.exec(str);
