@@ -1,4 +1,4 @@
-// Maps = Key-value  paires - can use ANy type as a key or value
+// Maps = Key-value  paires - can use Any type as a key or value
 
 const map1 = new Map();
 
