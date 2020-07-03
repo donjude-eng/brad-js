@@ -4,7 +4,7 @@
 //  console.log(sym2);
 //  console.log(typeof sym2);
 //  console.log(Symbol('123') === Symbol('123'));
-// //  console.log(`hello ${sym1}`); // getting error can't convert symbol to string
+// //  console.log(`hello ${sym1}`); 
 //  console.log(`hello ${String(sym1)}`);
 //  console.log(`hello ${sym1.toString()}`);
 
@@ -24,7 +24,7 @@ myObj.key4 = "prop4"; // regular property
 
 // // symbols are not enumarable in for ... in
 // for(let i in myObj) {
-//     console.log(`${i} : ${myObj[i]}`); // only console regular property becouse of Symbols are not enumarable
+//     console.log(`${i} : ${myObj[i]}`); 
 // }
 
 // Symbol are ignored by JSON.Stringify()
