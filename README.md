@@ -79,23 +79,5 @@ include --If something is available in the string.
  b. for each
  c. ID map
  
- 20 --Window object
- a- Document object model
- --Select element
- --style
- --changes mode
- --This is all for working with the UI.
- The window object is the part of client side.
  
- ---Javascript runtime runs as a standalone process in our machine or in our computer.
- ---Computer systems is the environment --In nodejs
- 
- --Client side --> Browser is the Global environment --> Node js in chrome use both the javascript environment called V8.
- 
- --val location -->details address , href, origin , protocol.
- --navigator object
- 
- 21- Scope
- let and const has the block level scope and var has the function scope.
- charAT is get the charcter
  ```
