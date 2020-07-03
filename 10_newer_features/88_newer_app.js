@@ -23,8 +23,8 @@
 // console.log(names.next().value);
 
 // // generators examples
-// function* sayNames() {  //funciton* means tell to js this is not just a function it is a generator
-// yield 'jack'   // yield- need for using a value in generator
+// function* sayNames() {  
+// yield 'jack'   
 // yield 'john'
 // yield 'julie'
 // }
