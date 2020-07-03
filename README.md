@@ -15,9 +15,11 @@ b: Variable
  a: We can reassign using variable var or let
 =======
 master
+07: Variable
+ a: 2e can reassign using variable var or let
+ master
+ b:Variable name (letter, -, number and &.
 
-
- 
  08-Datatypes
  a - primitive data types
  b: Reference data types
