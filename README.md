@@ -75,9 +75,7 @@ include --If something is available in the string.
  
  19--General loops
  
- a. for loop
- b. for each
- c. ID map
+
  
  20 --Window object
  a- Document object model
