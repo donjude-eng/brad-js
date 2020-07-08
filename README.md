@@ -98,6 +98,10 @@ include --If something is available in the string.
  let and const has the block level scope and var has the function scope.
  charAT is get the charcter
  
+ 
+ -----------------------------------------------------------------------------------------
+ 
+ 
 
  
  
