@@ -103,6 +103,13 @@ include --If something is available in the string.
  
  20 Web Projects With Vanilla JavaScript
  
+ ##Modal & Menu Slider
+- Create and style landing page
+- Style side nav and modal
+- Add functionality to make menu open/close on button click
+- Add functionality to make modal open/close on button click
+
+ 
  ## Exchange Rate
 - Display UI with 2 select lists for countries and 2 inputs for amounts
 - Fetch exchange rates from API (https://api.exchangerate-api.com)
@@ -119,6 +126,13 @@ include --If something is available in the string.
 - Show notification when select a letter twice
 - Show popup on win or lose
 - Play again button to reset game
+
+## Meal Finder App
+- Display UI with form to search and button to generate
+- Connect to API and get meals
+- Display meals in DOM with image and hover effect
+- Click on meal and see the details
+- Click on generate button and fetch & display a random meal
  
  
 
