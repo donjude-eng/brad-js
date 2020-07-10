@@ -126,6 +126,7 @@ function removeUpdateText(e) {
     } else {
       updateBalance(-amountAdd)
       addpersonExpense(-amountAdd)
+      //console.log(updateBalance)
     }
     e.target.parentElement.remove();
   }
