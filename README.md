@@ -127,6 +127,15 @@ include --If something is available in the string.
 - Show popup on win or lose
 - Play again button to reset game
 
+## Meal Finder App
+- Display UI with form to search and button to generate
+- Connect to API and get meals
+- Display meals in DOM with image and hover effect
+- Click on meal and see the details
+- Click on generate button and fetch & display a random meal
+ 
+ 
+
 
 
  
