@@ -133,13 +133,13 @@ include --If something is available in the string.
 - Display meals in DOM with image and hover effect
 - Click on meal and see the details
 - Click on generate button and fetch & display a random meal
- 
- 
 
+## Expense Tracker
 
-
- 
- 
+- Create UI for project
+- Display transaction items in DOM
+- Show balance, expense and income totals
+- Add new transation and reflect in total
  
  
  ```
