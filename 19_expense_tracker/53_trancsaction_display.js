@@ -209,5 +209,7 @@ function removeTextFromLs(textRemove) {
 
 }
 
+/// I the issue was the number looks as string"
+
 
 
