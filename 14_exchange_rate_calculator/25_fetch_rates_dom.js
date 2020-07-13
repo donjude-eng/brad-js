@@ -1,0 +1,55 @@
+// function calculate() {
+//     // fetch('24_json_fetch.json')
+//     // .then(res => res.json())
+//     // .then(data => (document.body.innerHTML = data[0].text));
+
+//     ///The above is the basic idea behind the JSON Fetch.
+// }
+
+// calculate();
+
+const currencyEl_one = document.getElementById('currency-one');
+const amountEl_one = document.getElementById('amount-one');
+const currencyEl_two = document.getElementById('currency-two');
+const amountEl_two = document.getElementById('amount-two');
+//onsole.log(amountEl_two)
+
+const rate_El = document.getElementById('rate');
+const swap = document.getElementById('swap');
+
+//Fetch exchange ratesand update the DOM
+function calculate() {
+    const currency_one = currencyEl_one.value;
+    const currency_two = currencyEl_two.value;
+    //console.log(currency_One, currency_Two)
+
+    fetch(`https://api.exchangerate-api.com/v4/latest/USD${currency_one}`)
+    .then(res => res.json())
+    .then(data => {
+        //console.log(data);
+        const rate = data.rates[currency_two];
+        //console.log(rate);
+
+        rate_El.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
+
+        amountEl_two.value = (amountEl_one.value * rate).toFixed(2);
+    });
+
+}
+
+
+//Event listeners
+currencyEl_one.addEventListener('change', calculate);
+amountEl_one.addEventListener('input', calculate);
+currencyEl_two.addEventListener('change', calculate);
+amountEl_two.addEventListener('input', calculate);
+
+swap.addEventListener('click' , () => {
+    const temp = currencyEl_one.value;
+    currencyEl_one.value = currencyEl_two.value;
+    currencyEl_two.value = temp;
+    calculate();
+})
+
+
+calculate();
