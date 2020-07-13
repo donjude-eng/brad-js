@@ -141,5 +141,4 @@ include --If something is available in the string.
 - Show balance, expense and income totals
 - Add new transation and reflect in total
  
- 
  ```
