@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color: #242333;
+
+}
+
+.top-class h1{
+    text-align: center;
+    margin:0;
+    padding-left: 120px;
+}
+
+.first-container {
+    padding-top: 10px;
+    background-color: rgb(248, 248, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.email h2 {
+    margin:0;
+}
+
+.keyboard-container {
+    background-color: #242333;
+    display: flex;
+    flex-flow: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: 'Lato', sans-serif;
+    margin-right: 0;
+    max-width: 800px;
+    margin: 0 auto;
+
+
+}
+
+.logo{
+    width:40px; height:40px;
+    background-color:#CCC;
+    color: #222;
+    font-style: oblique;
+    font-size:30px;
+    line-height:40px;
+    text-align:center;
+    /* margin: -20px auto 10px auto; */
+    border-radius:40px;
+    margin-top: 20px;
+}
+
+.lights{
+    position:relative;
+    padding-bottom: 10px;
+
+}
+
+.lights span{
+    margin:0 20px 0 20px;
+    padding:0;
+    text-align: center;
+}
+
+.lights span:after{
+content:"";
+  width:11px; height:8px;
+  top: 22px; margin-left:-9px;
+  background-color:#DBB921;
+  position:absolute;
+  border-radius: 3px;
+}
+
+
+.keyboard-letters {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.letter{
+    font-weight: bold;
+     list-style-type: none;
+     padding: 10px 20px;
+     border: 2px solid white;
+     margin: 3px;
+     box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
+     border-radius: 5px;
+     cursor: progress;
+
+}
+
+.message-class {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    width: 800px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.tap-image{
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.text-class {
+    outline: none;
+}
