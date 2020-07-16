@@ -140,6 +140,14 @@ include --If something is available in the string.
 - Show balance, expense and income totals
 - Add new transation and reflect in total
 
+## Rotating Keyboard
+
+Requirements - >
+
+Build the UI
+Style the UI
+While running throug keys letters once we press in the letters it should appear in the screen.
+
  
 
  
