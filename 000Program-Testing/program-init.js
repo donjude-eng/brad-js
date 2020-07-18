@@ -42,7 +42,8 @@
 
 //nameConstruct('Sagar' , 'Alias' , 'Jacky')
 
-// let nameConstruct2 = function(name1 , name2) {
+// let nameConstruct2 =
+//  function(name1 , name2) {
 //     let added = name1 + name2
 //     return nameConstruct
 // }
@@ -50,11 +51,60 @@
 // console.log(nameCOnstruct2('Don Jude'));
 
 
-let addNum = function(number1 , number2) {
-    let value1 = number1 + number2;
-    let value2 = number1 - number2;
-    return value1 , value2
+// let addNum = function(number1 , number2) {
+//     let value1 = number1 + number2;
+//     let value2 = number1 - number2;
+//     return value1 , value2
+// }
+
+// let result = addNum(10 , 20)
+// console.log(result)
+
+document.getElementById('key_a').addEventListener('click' , keyPressA);
+document.getElementById('key_b').addEventListener('click' , keyPressB);
+document.getElementById('key_c').addEventListener('click' , keyPressC);
+document.getElementById('key_d').addEventListener('click' , spacePress);
+document.getElementById('key_e').addEventListener('click' , enterPress);
+
+currentText = document.getElementById("keyboard").value;
+console.log(currentText);
+
+function keyPressA(e) {
+    e.preventDefault()
+    document.getElementById("keyboard").value += "A";
+
+    currentText = document.getElementById("keyboard").value;
+    arrayText = [...currentText];
+    console.log(arrayText);
+
+    console.log(currentText);
+    console.log("Pressed A")
 }
 
-let result = addNum(10 , 20)
-console.log(result)
+function keyPressB(e) {
+    e.preventDefault()
+    document.getElementById("keyboard").value += "B";
+
+    console.log("Pressed B")
+}
+
+function keyPressC(e) {
+    e.preventDefault()
+    document.getElementById("keyboard").value += "C";
+
+    console.log("Pressed C")
+}
+
+function spacePress(e) {
+    let textValue = keyPressA(e) +' '+ keyPressB(e);
+    e.preventDefault()
+    document.getElementById('keyboard').value += (textvalue);
+    console.log("space")
+}
+
+function enterPress(e){
+  e.preventDefault();
+
+  document.getElementById('keyboard').value += "\n";
+  console.log("Pressed Enter")
+}
