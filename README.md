@@ -148,6 +148,7 @@ Requirements - >
 - Style the UI
 - While running throug keys letters once we press in the letters it should appear in the screen.
 - The keys should be go upside and downwards once we enter at specxific letters.
+- Working on to get letters each
 
  
  ```
