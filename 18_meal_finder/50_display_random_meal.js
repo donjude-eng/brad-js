@@ -57,17 +57,7 @@ function searchMeal(e) {
 
 }
 
-//Fetch meal by ID
-function getMealById(mealID) {
-    fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
-        .then(res => res.json())
-        .then(data => {
-            //console.log(data);
-            const meal = data.meals[0];
 
-            addMealToDOM(meal);
-        })
-}
 
 // Fetch random meal from API
 function getRandomMeal() {
@@ -116,11 +106,7 @@ function addMealToDOM(meal) {
            </div>
     </div>
     `;
-
-    // This is bit confusing someone can explain the flow please;;
-
 }
-
 
 //Event listner
 submit.addEventListener('submit', searchMeal);
@@ -136,7 +122,6 @@ mealsEl.addEventListener('click', e => {
             return false;
         }
 
-
     });
     //console.log(mealInfo)
     if (mealInfo) {
@@ -144,6 +129,5 @@ mealsEl.addEventListener('click', e => {
         //console.log(mealID)
         getMealById(mealID);
     }
-
 
 });
