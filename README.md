@@ -98,6 +98,70 @@ include --If something is available in the string.
  let and const has the block level scope and var has the function scope.
  charAT is get the charcter
  
+innerText and textContent
+
+Although the names seem similar, there are important differences:
+textContent gets the content of all elements, including <script> and <style> elements.
+In contrast, innerText only shows “human-readable” elements.
+textContent returns every element in the node. In contrast, innerText is aware of styling and won’t return the text of “hidden” elements.
+map()
+
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+const array1 = [1, 4, 9, 16];
+//pass a function to map 
+const map1 = array1.map(x => x * 2);
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+forEach()
+
+The forEach() method executes a provided function once for each array element.
+   const array1 = ['a', 'b', 'c'];
+   array1.forEach(element => console.log(element));
+   // expected output: "a"
+  // expected output: "b"
+ // expected output: "c"
+Difference between map() and forEach
+
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+The forEach() method executes a provided function once for each array element.
+forEach() does not mutate the array on which it is called
+sort()
+
+The sort() method sorts the elements of an array in place and returns the sorted array.
+The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+const months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+const array1 = [1, 30, 4, 21, 100000];
+array1.sort();
+console.log(array1);
+// expected output: Array [1, 100000, 21, 30, 4]
+filter()
+
+The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+reduce()
+
+The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+
+ 
  
  -----------------------------------------------------------------------------------------
  
