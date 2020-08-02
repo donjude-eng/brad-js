@@ -1,5 +1,4 @@
-	
-  ```
+
   ##The variable without equsl sign : We say optionally, because if you want, you can create a variable without
 	an initial value, and then assign it a value later. To create a variable
 	without an initial value, just leave off the assignment part, like this:
@@ -82,8 +81,10 @@
 	
 	Let conisderes a postive number as #true# and a negative number as #false#
 	##OR operator taken as *plus* and && Operator is taken as *Multiply*
-  ```
 	
+	
+	to Gind the last item of an array ---- myArray[myArray.length - 1];
+
 	
 	
 	
