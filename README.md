@@ -34,6 +34,10 @@ master
  -->math.random (this will generate random numbers)
  math.floor (math.floor (1*2)
  
+	 The Document Object Model, or DOM, is
+	the browser’s internal representation of your
+	web page.
+ 
  
   ##The variable without equsl sign : We say optionally, because if you want, you can create a variable without
 	an initial value, and then assign it a value later. To create a variable
@@ -64,189 +68,189 @@ master
 	}
 
 
-	## What is psecdocode and how it works.
-	DECLARE three variables to hold the location of each cell of the ship. Let’s call them
-	location1, location2 and location3.
- 
- 11-string operations
- 
- substring --This will take the first line in the string.
- splice --This will take out the value to a string.
-split -- This can be split the element with coma.
-include --If something is available in the string.
- chart -- Will get the element using the chart.
- 
- 12--Template literals
- --Ternary operator
- -- Blockquote
- 
- 13--Array method
- --ISarray (This will show the word inline array)
- --for loops works in object
- 
- 14--Object literals
- --for loops will work in object
- 
- 15--Date and times
- --Date would be 0 based
- --Today.getday
- --doubt(get-date)
- 
- 16 -- Comparison operator
- --Don't matter is it is string or an number
- =assignment operator
- ===comparison operator
- logical operator
- 
- 17--switches
- --switch can be used instead of else statement
- Day and date
- 
- 18--function
- function declaration
- ananymouus function
- invokable function
- 
- 19--General loops
-  a. for loop
- b. for each
- c. ID map
- 
-  20 --Window object
- a- Document object model
- --Select element
- --style
- --changes mode
- --This is all for working with the UI.
- The window object is the part of client side.
- 
- ---Javascript runtime runs as a standalone process in our machine or in our computer.
- ---Computer systems is the environment --In nodejs
- 
- --Client side --> Browser is the Global environment --> Node js in chrome use both the javascript environment called V8.
- 
- --val location -->details address , href, origin , protocol.
- --navigator object
- 
- 21- Scope
- let and const has the block level scope and var has the function scope.
- charAT is get the charcter
- 
-innerText and textContent
+		## What is psecdocode and how it works.
+		DECLARE three variables to hold the location of each cell of the ship. Let’s call them
+		location1, location2 and location3.
 
-Although the names seem similar, there are important differences:
-textContent gets the content of all elements, including <script> and <style> elements.
-In contrast, innerText only shows “human-readable” elements.
-textContent returns every element in the node. In contrast, innerText is aware of styling and won’t return the text of “hidden” elements.
-map()
+	 11-string operations
 
-The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
-const array1 = [1, 4, 9, 16];
-//pass a function to map 
-const map1 = array1.map(x => x * 2);
-console.log(map1);
-// expected output: Array [2, 8, 18, 32]
-forEach()
+	 substring --This will take the first line in the string.
+	 splice --This will take out the value to a string.
+	split -- This can be split the element with coma.
+	include --If something is available in the string.
+	 chart -- Will get the element using the chart.
 
-The forEach() method executes a provided function once for each array element.
-   const array1 = ['a', 'b', 'c'];
-   array1.forEach(element => console.log(element));
-   // expected output: "a"
-  // expected output: "b"
- // expected output: "c"
-Difference between map() and forEach
+	 12--Template literals
+	 --Ternary operator
+	 -- Blockquote
 
-The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
-The forEach() method executes a provided function once for each array element.
-forEach() does not mutate the array on which it is called
-sort()
+	 13--Array method
+	 --ISarray (This will show the word inline array)
+	 --for loops works in object
 
-The sort() method sorts the elements of an array in place and returns the sorted array.
-The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
-const months = ['March', 'Jan', 'Feb', 'Dec'];
-months.sort();
-console.log(months);
-// expected output: Array ["Dec", "Feb", "Jan", "March"]
+	 14--Object literals
+	 --for loops will work in object
 
-const array1 = [1, 30, 4, 21, 100000];
-array1.sort();
-console.log(array1);
-// expected output: Array [1, 100000, 21, 30, 4]
-filter()
+	 15--Date and times
+	 --Date would be 0 based
+	 --Today.getday
+	 --doubt(get-date)
 
-The filter() method creates a new array with all elements that pass the test implemented by the provided function.
-const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+	 16 -- Comparison operator
+	 --Don't matter is it is string or an number
+	 =assignment operator
+	 ===comparison operator
+	 logical operator
 
-const result = words.filter(word => word.length > 6);
+	 17--switches
+	 --switch can be used instead of else statement
+	 Day and date
 
-console.log(result);
-// expected output: Array ["exuberant", "destruction", "present"]
-reduce()
+	 18--function
+	 function declaration
+	 ananymouus function
+	 invokable function
 
-The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
-const array1 = [1, 2, 3, 4];
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
+	 19--General loops
+	  a. for loop
+	 b. for each
+	 c. ID map
 
-// 1 + 2 + 3 + 4
-console.log(array1.reduce(reducer));
-// expected output: 10
+	  20 --Window object
+	 a- Document object model
+	 --Select element
+	 --style
+	 --changes mode
+	 --This is all for working with the UI.
+	 The window object is the part of client side.
 
-// 5 + 1 + 2 + 3 + 4
-console.log(array1.reduce(reducer, 5));
-// expected output: 15
+	 ---Javascript runtime runs as a standalone process in our machine or in our computer.
+	 ---Computer systems is the environment --In nodejs
 
- 
- 
- -----------------------------------------------------------------------------------------
- 
- 20 Web Projects With Vanilla JavaScript
- 
- ##Modal & Menu Slider
-- Create and style landing page
-- Style side nav and modal
-- Add functionality to make menu open/close on button click
-- Add functionality to make modal open/close on button click
+	 --Client side --> Browser is the Global environment --> Node js in chrome use both the javascript environment called V8.
 
- ## Exchange Rate
-- Display UI with 2 select lists for countries and 2 inputs for amounts
-- Fetch exchange rates from API (https://api.exchangerate-api.com)
-- Display the values for both countries
-- Update values on amount change
-- Swap country rates
+	 --val location -->details address , href, origin , protocol.
+	 --navigator object
 
--------------------------------------------
-## Hangman Game
-- Display hangman pole and figure using SVG
-- Generate a random word
-- Display word in UI with correct letters
-- Display wrong letters
-- Show notification when select a letter twice
-- Show popup on win or lose
-- Play again button to reset game
+	 21- Scope
+	 let and const has the block level scope and var has the function scope.
+	 charAT is get the charcter
 
-## Meal Finder App
-- Display UI with form to search and button to generate
-- Connect to API and get meals
-- Display meals in DOM with image and hover effect
-- Click on meal and see the details
-- Click on generate button and fetch & display a random meal
+	innerText and textContent
 
-## Expense Tracker
+	Although the names seem similar, there are important differences:
+	textContent gets the content of all elements, including <script> and <style> elements.
+	In contrast, innerText only shows “human-readable” elements.
+	textContent returns every element in the node. In contrast, innerText is aware of styling and won’t return the text of “hidden” elements.
+	map()
 
-- Create UI for project
-- Display transaction items in DOM
-- Show balance, expense and income totals
-- Add new transation and reflect in total
+	The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+	const array1 = [1, 4, 9, 16];
+	//pass a function to map 
+	const map1 = array1.map(x => x * 2);
+	console.log(map1);
+	// expected output: Array [2, 8, 18, 32]
+	forEach()
 
-## Rotating Keyboard
+	The forEach() method executes a provided function once for each array element.
+	   const array1 = ['a', 'b', 'c'];
+	   array1.forEach(element => console.log(element));
+	   // expected output: "a"
+	  // expected output: "b"
+	 // expected output: "c"
+	Difference between map() and forEach
 
-Requirements - >
+	The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+	The forEach() method executes a provided function once for each array element.
+	forEach() does not mutate the array on which it is called
+	sort()
 
-- Build the UI
-- Style the UI
-- While running throug keys letters once we press in the letters it should appear in the screen.
-- The keys should be go upside and downwards once we enter at specxific letters.
-- Working on to get letters each
+	The sort() method sorts the elements of an array in place and returns the sorted array.
+	The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
+	const months = ['March', 'Jan', 'Feb', 'Dec'];
+	months.sort();
+	console.log(months);
+	// expected output: Array ["Dec", "Feb", "Jan", "March"]
 
- 
+	const array1 = [1, 30, 4, 21, 100000];
+	array1.sort();
+	console.log(array1);
+	// expected output: Array [1, 100000, 21, 30, 4]
+	filter()
+
+	The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+	const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+	const result = words.filter(word => word.length > 6);
+
+	console.log(result);
+	// expected output: Array ["exuberant", "destruction", "present"]
+	reduce()
+
+	The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
+	const array1 = [1, 2, 3, 4];
+	const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+	// 1 + 2 + 3 + 4
+	console.log(array1.reduce(reducer));
+	// expected output: 10
+
+	// 5 + 1 + 2 + 3 + 4
+	console.log(array1.reduce(reducer, 5));
+	// expected output: 15
+
+
+
+	 -----------------------------------------------------------------------------------------
+
+	 20 Web Projects With Vanilla JavaScript
+
+	 ##Modal & Menu Slider
+	- Create and style landing page
+	- Style side nav and modal
+	- Add functionality to make menu open/close on button click
+	- Add functionality to make modal open/close on button click
+
+	 ## Exchange Rate
+	- Display UI with 2 select lists for countries and 2 inputs for amounts
+	- Fetch exchange rates from API (https://api.exchangerate-api.com)
+	- Display the values for both countries
+	- Update values on amount change
+	- Swap country rates
+
+	-------------------------------------------
+	## Hangman Game
+	- Display hangman pole and figure using SVG
+	- Generate a random word
+	- Display word in UI with correct letters
+	- Display wrong letters
+	- Show notification when select a letter twice
+	- Show popup on win or lose
+	- Play again button to reset game
+
+	## Meal Finder App
+	- Display UI with form to search and button to generate
+	- Connect to API and get meals
+	- Display meals in DOM with image and hover effect
+	- Click on meal and see the details
+	- Click on generate button and fetch & display a random meal
+
+	## Expense Tracker
+
+	- Create UI for project
+	- Display transaction items in DOM
+	- Show balance, expense and income totals
+	- Add new transation and reflect in total
+
+	## Rotating Keyboard
+
+	Requirements - >
+
+	- Build the UI
+	- Style the UI
+	- While running throug keys letters once we press in the letters it should appear in the screen.
+	- The keys should be go upside and downwards once we enter at specxific letters.
+	- Working on to get letters each
+
+
  ```
