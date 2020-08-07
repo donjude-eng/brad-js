@@ -251,6 +251,9 @@ master
 	- While running throug keys letters once we press in the letters it should appear in the screen.
 	- The keys should be go upside and downwards once we enter at specxific letters.
 	- Working on to get letters each
+	The “withIN” is why it’s called “inner” HTML. Let’s try a little
+	experiment. We’ll try displaying the content of the planet element object in the
+	console by logging the innerHTML property.
 
 
  ```
