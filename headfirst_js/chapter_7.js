@@ -78,3 +78,8 @@ if (num == true) {
 if (undefined == null) {
     console.log(typeof num)
 }
+
+//=== (strict equality)
+// == (equality operator)
+//=== convert the boolean to a number?
+//That doesn’t seem very sensical to me.
