@@ -254,6 +254,10 @@ master
 	The “withIN” is why it’s called “inner” HTML. Let’s try a little
 	experiment. We’ll try displaying the content of the planet element object in the
 	console by logging the innerHTML property.
+	
+	The window object is built-in
+to JavaScript. It represents
+the browser window.
 
 
  ```
