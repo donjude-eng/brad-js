@@ -1,50 +1,60 @@
 let access = document.getElementById("code9");
 let code = access.innerHTML;
 code = code + " midnight";
-alert(code);
+//alert(code);
 
 
-let access = document.getElementById("code9");
-var code = access.innerHTML;
-code = code + " midnight";
-alert(code);
+let planet = document.getElementById("greenplanet");
+let planet = document.getElementById("redplanet");
+let planet = document.getElementById("blueplanet");
 
-let access = document.getElementById("code9");
-let code = access.innerHTML;
-code = code + " midnight";
-alert(code);
 
-let scoop = document.getElementById("raspberry");
-let altText = scoop.getAttribute("alt");
-console.log("I can't see the image in the console,");
-console.log(" but I'm told it looks like: " + altText);
+planet.innerHTML = "Red Alert : hit by phaser fire!";
 
-let scoop = document.getElementById("raspberry");
-let altText = scoop.getAttribute("alt");
+console.log(planet.innerHTML);
+
+let scoop = document.getElementById("greenplanet");
+let altText = scoop.getAttribute("redtext");
+//console.log("I can't see the image in the console,");
+//console.log(" but I'm told it looks like: " + altText);
+
+let green = document.getElementById("greenPlanet");
+let altText = green.getAttribute("redtext");
 if (altText == null) {
-    console.log("Oh, I guess there isn't an alt attribute.");
+    //console.log("Oh, I guess there isn't an alt attribute.");
 } else {
-    console.log("I can't see the image in the console,");
-    console.log(" but I'm told it looks like " + altText);
+    //console.log("I can't see the image in the console,");
+    //console.log(" but I'm told it looks like " + altText);
 }
 
-// type test
-let test1 = "abcdef";
-let test2 = 123;
-let test3 = true;
-let test4 = {};
-let test5 = [];
-let test6;
-let test7 = { "abcdef": 123 };
-let test8 = ["abcdef", 123];
-function test9() { return "abcdef" };
 
-console.log(typeof test1);
-console.log(typeof test2);
-console.log(typeof test3);
-console.log(typeof test4);
-console.log(typeof test5);
-console.log(typeof test6);
-console.log(typeof test7);
-console.log(typeof test8);
-console.log(typeof test9);
+//Adding color yo the browser using Dom
+function init() {
+    let planet = document.getElementById("greenplanet");
+    planet.innerHTML = "Red Alert: hit by phaser fire!";
+    planet.setAttribute("class", "redtext");
+}
+window.onload = init;
+
+//Sharpen your pencil adding elements to the dom
+function addSongs() {
+    let song1 = document.getElementById("song1");
+    let song2 = document.getElementById("song2");
+    let song3 = document.getElementById("song3");
+    song1.innerHTML = "Blue Suede Strings, by Elvis Pagely";
+    song2.innerHTML = "Great Objects on Fire, by Jerry JSON Lewis";
+    song3.innerHTML = "I Code the Line, by Johnny JavaScript";
+}
+window.onload = addSongs;
+
+// Adding elemnts green planet to the dom
+function init() {
+    //let planet = document.getElementById("greenplanet");
+    //planet.innerHTML = "Red Alert: hit by phaser fire!";
+}
+window.onload = init; ///Here, we’re assigning the function init to the
+// window.onload property. Make sure you don't
+// use parentheses after the function name! We're
+// not calling the function; we're just assigning the
+// function value to the window.onload property.
+//console.log(init);
