@@ -184,10 +184,16 @@ let index = phrase.indexOf("ca");
 console.log("there's a cat sitting at index " + index);
 
 
-//Subst
+//Substring
 let data = "name|phone|address";
 let val = data.substring(5, 10);
 console.log("Substring is " + val);
+
+//Split method
+
+let data = "name|phone|address";
+let vals = data.split("|");
+console.log("Split array is ", vals);
 
 let order = 1 + 2 + " pizzas";
 console.log(order);
@@ -235,7 +241,19 @@ console.log(num2 === num3);
 console.log(num3 + 10);
 console.log(num2 + 10);
 
-
-
-
 //[], {} ,()
+
+function validate(phoneNumber) {
+    if (phoneNumber.length !== 8) {
+        return false;
+    }
+    let first = phoneNumber.substring(0, 3);
+    let second = phoneNumber.substring(4);
+
+    if (phoneNumber.charAt(3) !== "-" || isNaN(first) || isNaN(second)) {
+        return false;
+    }
+    return true;
+}
+
+//toLowerCase
