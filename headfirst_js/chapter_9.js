@@ -47,12 +47,10 @@ function init() {
     for (var i = 0; i < images.length; i++) {
         images[i].onclick = showAnswer;
     }
-    console.log(init)
-
 };
 
 
-//Foe each imgaes without blur
+//Foe each imgages without blur
 // function showImageZero() {
 //     let image = document.getElementById("zero");
 //     image.src = "img/zero.jpg";
@@ -112,5 +110,28 @@ function showAnswer() {
 function showAnswer() {
     let image = document.getElementById("five");
     image.src = ("img/five.jpg")
+}
+
+
+//Finsishing the game image
+window.onload = function () {
+    let images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+        images[i].onclick = showAnswer;
+    }
+};
+
+function showAnswer(eventObj) {
+    let image = eventObj.target;
+    let name = image.id;
+    name = name + ".jpg";
+    image.src = name;
+    setTimeout(reblur, 2000, image);
+}
+
+function reblur(image) {
+    let name = image.id;
+    name = name + "blur.jpg";
+    image.src = name;
 }
 
