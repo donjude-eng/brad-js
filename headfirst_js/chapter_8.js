@@ -113,7 +113,6 @@ let model = {
 };
 
 
-
 let index = ship.locations.indexOf(guess);
 
 let ship1 = { locations: ["10", "20", "30"], hits: ["", "", ""] };
@@ -140,7 +139,6 @@ let controller = {
         }
     }
 }
-
 
 
 function parseGuess(guess) {
@@ -194,7 +192,6 @@ function init() {
 }
 
 // controller.processGuess("A0");
-
 // controller.processGuess("A6");
 // controller.processGuess("B6");
 // controller.processGuess("C6");
@@ -206,3 +203,4 @@ function init() {
 // controller.processGuess("B0");
 // controller.processGuess("B1");
 // controller.processGuess("B2");
+
