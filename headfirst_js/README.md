@@ -103,8 +103,25 @@
 	(because the board is the most closely
 	positioned parent of the table and the
 	message area).
-
 	
+	
+	/////Typews of Events
+	Click : Get this event
+	when you click (or
+	tap) in a web page.
+	
+	load: The event you get when
+	the browser has completed
+	loading a web page.
+
+	mousemove: When you move your
+	mouse over an element,
+	you’ll generate this event.
+	
+	keypress: This event is generated
+	every time you press a key.
+
+
 	
 	
 
