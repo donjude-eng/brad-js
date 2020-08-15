@@ -346,7 +346,6 @@ for (i = 0; i < arrval.length; i = i + 1) {
     console.log(number[i]);
 }
 
-
 //The last problem
 function getMostCostEffectiveSolution(scores, costs, highscore) {
     var cost = 100;

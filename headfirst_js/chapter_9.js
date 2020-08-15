@@ -16,7 +16,7 @@
 // }
 
 ///Traditional way by wrting eventhandler for each id
-window.onload = init;
+//window.onload = init;
 // function init() {
 //     let image0 = document.getElementById("zero");
 //     image0.onclick = showImageZero;
@@ -39,20 +39,18 @@ window.onload = init;
 // }
 
 //making it two one handler using for loop.
-function init() {
-    let image = document.getElementById("zero");
-    image.onclick = showAnswer;
+// function init() {
+//     let image = document.getElementById("zero");
+//     image.onclick = showAnswer;
 
-    let images = document.getElementsByTagName("img");
-    for (var i = 0; i < images.length; i++) {
-        images[i].onclick = showAnswer;
-    }
-    console.log(init)
-
-};
+//     let images = document.getElementsByTagName("img");
+//     for (var i = 0; i < images.length; i++) {
+//         images[i].onclick = showAnswer;
+//     }
+// };
 
 
-//Foe each imgaes without blur
+//Foe each imgages without blur
 // function showImageZero() {
 //     let image = document.getElementById("zero");
 //     image.src = "img/zero.jpg";
@@ -84,33 +82,100 @@ function init() {
 // }
 
 ////Using showanswer function for loop
-function showAnswer() {
-    let image = document.getElementById("zero");
-    image.src = "img/zero.jpg";
+// function showAnswer() {
+//     let image = document.getElementById("zero");
+//     image.src = "img/zero.jpg";
+// }
+
+// function showAnswer() {
+//     let image = document.getElementById("one");
+//     image.src = "img/one.jpg";
+// }
+
+// function showAnswer() {
+//     let image = document.getElementById("two");
+//     image.src = ("img/two.jpg")
+// }
+
+// function showAnswer() {
+//     let image = document.getElementById("three");
+//     image.src = ("img/three.jpg")
+// }
+
+// function showAnswer() {
+//     let image = document.getElementById("four");
+//     image.src = ("img/four.jpg")
+// }
+
+// function showAnswer() {
+//     let image = document.getElementById("five");
+//     image.src = ("img/five.jpg")
+// }
+
+
+// function showAnswer(eventObj) {
+//     let image = eventObj.target;
+//     let name = image.id;
+//     name = name + ".jpg";
+//     image.src = name;
+// }
+
+// // //I didin't understand this problem
+// function init() {
+//     let map = document.getElementById("map");
+//     map.onmousemove = showCoords
+// }
+// function showCoords(eventObj) {
+//     let map = document.getElementById("coords");
+//     let x = eventObj.clientX;
+//     let y = eventObj.clientY;
+//     map.innerHTML = "Map coordinates: "
+//         + x + ", " + y;
+// }
+
+// //Set timeout property
+function timerHandler() {
+    //alert("Hey what are you doing just sitting there staring at a blank screen?");
 }
 
-function showAnswer() {
-    let image = document.getElementById("one");
-    image.src = "img/one.jpg";
+setTimeout(timerHandler, 3000);
+
+//Set interval property
+
+let tick = true;
+function ticker() {
+    if (tick) {
+        //console.log("Tick");
+        tick = false;
+    } else {
+        //console.log("Tock");
+        tick = true;
+    }
+}
+setInterval(ticker, 1000);
+
+
+//Finsishing the game image
+window.onload = function () {
+    let images = document.getElementsByTagName("img");
+    for (let i = 0; i < images.length; i++) {
+        //images[i].onclick = showAnswer;
+        images[i].onmouseover = showAnswer;
+        images[i].onmouseout = reblur;
+    }
+};
+
+function showAnswer(eventObj) {
+    let image = eventObj.target;
+    let name = image.id;
+    name = name + ".jpg";
+    image.src = name;
+    setTimeout(reblur, 2000, image);
 }
 
-function showAnswer() {
-    let image = document.getElementById("two");
-    image.src = ("img/two.jpg")
-}
-
-function showAnswer() {
-    let image = document.getElementById("three");
-    image.src = ("img/three.jpg")
-}
-
-function showAnswer() {
-    let image = document.getElementById("four");
-    image.src = ("img/four.jpg")
-}
-
-function showAnswer() {
-    let image = document.getElementById("five");
-    image.src = ("img/five.jpg")
+function reblur(image) {
+    let name = image.id;
+    name = name + "blur.jpg";
+    image.src = name;
 }
 
