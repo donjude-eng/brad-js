@@ -31,14 +31,14 @@
 //Function invokation declaration
 function quack(num) {
     for (let i = 0; i < num; i++) {
-        console.log("Quack!");
+        //console.log("Quack!");
     }
 }
 
 //Function expression
 let fly = function (num) {
     for (let i = 0; i < num; i++) {
-        console.log("Flying!");
+        //console.log("Flying!");
     }
 }
 
@@ -47,6 +47,50 @@ superFly(2);
 
 let superQuack = quack;
 superQuack(3);
+
+//let a = 10;
+//let b = 20;
+
+////Declaration and expression together
+let midi = true;
+let type = "Piano";
+let midiInterFace;
+
+
+function play(sequence) {
+    //code here
+}
+let pause = function () {
+    stop();
+}
+
+function stop() {
+    // code here
+}
+
+function createMidi() {
+    // code here
+}
+if (midi) {
+    midiInterface = function (type) {
+        // code here
+    };
+}
+
+//Shell game is here
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ////Passahngers check problem.
@@ -89,18 +133,6 @@ function printPassengers(passengers) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Reverse
 const arrval = [10, 25, 35, 45, 55, 20, 75]
 const arrval2 = [10, 35, 45, 55, 65]
@@ -130,4 +162,9 @@ for (let i = 0; i < arrval.length; i = i + 1) {
 // }
 // reverse([10, 25, 35, 45, 55, 65, 75])
 
+const numberOfhandShakes = (numberOfPeople) => {
+    let result = numberOfPeople * ((numberOfPeople - 1) / 2);
+    return result;
+}
 
+console.log(numberOfhandShakes(10));
