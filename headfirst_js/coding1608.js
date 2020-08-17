@@ -68,17 +68,37 @@ let hiStr =  sumTwoNumber(5 , 10);
 //Task 5
 //Pass an array into function, Check if that array contains an element 0;
 
-let arr = [10, 15, 20, 25, 30, 35, 40];
+let arr = [5, 6, 12, 13, 14, 0, 8];
 
 function zeroChecker(numberArray) {
-    for (let i = 0; i < arr.length; i = i + 1){
+    for (let i = 0; i < numberArray.length; i = i + 1){
         //console.log(arr[i]);
-        if (arr[i] % 2 === 0){
-            console.log(arr[i]);
+        if(arr[i] === 0) {
+            //console.log(`${i + 1} th element is 0`);
         }
     }
 
+}
+zeroChecker(arr);
 
+//Task 6
+//find the sum of the elements of an array using function.
+let arr2 = [2, 4, 6, 12, 14 ,22, 24]
+  //index   0  1  2  3    4  5   6
+
+function sumOfArray(inputArray) {
+    let sum = 0;
+    for (let i = 0; i < inputArray.length; i ++){
+        sum = sum + inputArray[i]//84
+    }
+    return sum;
 }
 
-zeroChecker(arr);
+let hisum = sumOfArray(arr2);
+console.log(hisum)
+
+let i = 0;
+while (i< hisum) {
+    console.log("HI Don");
+    i = i + 1;
+}
