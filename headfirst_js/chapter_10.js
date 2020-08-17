@@ -77,31 +77,20 @@ if (midi) {
     };
 }
 
-//Shell game is here
 
 
+////Passangers check problem.
 
-
-
-
-
-
-
-
-
-
-
-
-
-////Passahngers check problem.
-
-let passengers = [{ name: "Jane Doloop", paid: true },
-{ name: "Dr. Evel", paid: true },
-{ name: "Sue Property", paid: false },
-{ name: "John Funcall", paid: true }];
+let passengers = [
+    { name: "Jane Doloop", paid: true },
+    { name: "Dr. Evel", paid: true },
+    { name: "Sue Property", paid: false },
+    { name: "John Funcall", paid: true }
+];
 
 function checkPaid(passengers) {
     for (let i = 0; i < passengers.length; i++) {
+        //console.log(passengers[i]);
         if (!passengers[i].paid) {
             return false;
         }
@@ -109,6 +98,9 @@ function checkPaid(passengers) {
 
     return true;
 }
+
+
+//console.log(checkPaid(passengers));
 
 function checkNoFly(passengers) {
     for (let i = 0; i < passengers.length; i++) {
@@ -119,17 +111,15 @@ function checkNoFly(passengers) {
     return true;
 }
 
-function printPassengers(passengers) {
-    for (let i = 0; i < passengers.length; i++) {
-        console.log(passengers[i].name);
-        return false;
-    }
-}
+//console.log(checkNoFly(passengers));
 
 
-
-
-
+// function printPassengers(passengers) {
+//     for (let i = 0; i < passengers.length; i++) {
+//         console.log(passengers[i].name);
+//         return false;
+//     }
+// }
 
 
 
@@ -167,4 +157,102 @@ const numberOfhandShakes = (numberOfPeople) => {
     return result;
 }
 
-console.log(numberOfhandShakes(10));
+//console.log(numberOfhandShakes(10));
+
+
+// function sayIt(translator) {
+//     let phrase = translator("Hello");
+//     console.log(phrase);
+// }
+
+// function hawaiianTranslator(word) {
+//     if (word === "Hello") return "Aloha";
+//     if (word === "Goodbye") return "Good Bye";
+// }
+
+// sayIt(hawaiianTranslator);
+
+
+
+// function serviceCustomer(passenger) {
+//     //     if (passenger.ticket === "firstclass") {
+//     //         alert("Would you like a cocktail oer wine?");
+//     //     } else {
+//     //         alert("Your choice is cola oer water");
+//     //     }
+
+//     // }
+
+//serviceCustomer();
+
+//Taking orders with first class functions
+function createDrinkOrder(passenger) {
+    let orderFunction;
+    if (passenger.ticket === "firstclass") {
+        orderFunction = function () {
+            alert("Would you like a cocktail or wine?");
+        };
+    } else {
+        orderFunction = function () {
+            alert("Your choice is cola or water.");
+        };
+    }
+    return orderFunction;
+}
+
+///Passangers iteration
+
+let passengers = [
+    { name: "Jane Doloop", paid: true },
+    { name: "Dr. Evel", paid: true },
+    { name: "Sue Property", paid: false },
+    { name: "John Funcall", paid: true }
+];
+
+function servePassengers(passengers) {
+    for (let i = 0; i < passengers.length; i++) {
+        console.log(passengers[i]);
+    }
+}
+
+servePassengers(passengers);
+
+
+//Write your solutions for the remaining
+//three sort functions below.
+function compareName(colaA, colaB) {
+    if (colaA.name > colaB.name) {
+        return 1;
+    } else if (colaA.name === colaB.name) {
+        return 0;
+    } else {
+        return -1;
+    }
+}
+function compareCalories(colaA, colaB) {
+    if (colaA.calories > colaB.calories) {
+        return 1;
+    } else if (colaA.calories === colaB.calories) {
+        return 0;
+    } else {
+        return -1;
+    }
+}
+function compareColor(colaA, colaB) {
+    if (colaA.color > colaB.color) {
+        return 1;
+    } else if (colaA.color === colaB.color) {
+        return 0;
+    } else {
+        return -1;
+    }
+}
+products.sort(compareName);
+console.log("Products sorted by name:");
+printProducts(products);
+products.sort(compareCalories);
+console.log("Products sorted by calories:");
+printProducts(products);
+products.sort(compareColor);
+console.log("Products sorted by color:");
+printProducts(products);
