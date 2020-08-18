@@ -91,7 +91,7 @@ let passengers = [
 function checkPaid(passengers) {
     for (let i = 0; i < passengers.length; i++) {
         //console.log(passengers[i]);
-        if (!passengers[i].paid) {
+        if (passengers[i].paid === false) {
             return false;
         }
     }
@@ -159,31 +159,30 @@ const numberOfhandShakes = (numberOfPeople) => {
 
 //console.log(numberOfhandShakes(10));
 
+//Function inside function call.
+function sayIt(translator) {
+    let phrase = translator("Hello");
+    console.log(phrase);
+}
 
-// function sayIt(translator) {
-//     let phrase = translator("Hello");
-//     console.log(phrase);
-// }
+function hawaiianTranslator(word) {
+    if (word === "Hello") return "Aloha";
+    if (word === "Goodbye") return "Good Bye";
+}
 
-// function hawaiianTranslator(word) {
-//     if (word === "Hello") return "Aloha";
-//     if (word === "Goodbye") return "Good Bye";
-// }
-
-// sayIt(hawaiianTranslator);
+sayIt(hawaiianTranslator);
 
 
+//Serve customer passanger
+function serviceCustomer(passenger) {
+    if (passenger.ticket === "firstclass") {
+        alert("Would you like a cocktail or wine?");
+    } else {
+        alert("Your choice is cola oer water");
+    }
 
-// function serviceCustomer(passenger) {
-//     //     if (passenger.ticket === "firstclass") {
-//     //         alert("Would you like a cocktail oer wine?");
-//     //     } else {
-//     //         alert("Your choice is cola oer water");
-//     //     }
-
-//     // }
-
-//serviceCustomer();
+}
+serviceCustomer();
 
 //Taking orders with first class functions
 function createDrinkOrder(passenger) {
@@ -200,8 +199,19 @@ function createDrinkOrder(passenger) {
     return orderFunction;
 }
 
-///Passangers iteration
+function serveCustomer(passenger) {
+    let getDrinkOrderFunction = createDrinkOrder(passenger);
 
+    getDrinkOrderFunction();
+    // get dinner order
+    getDrinkOrderFunction();
+    getDrinkOrderFunction();
+    // show movie
+    getDrinkOrderFunction();
+    // pick up trash
+}
+
+///Passengers iteration
 let passengers = [
     { name: "Jane Doloop", paid: true },
     { name: "Dr. Evel", paid: true },
@@ -218,17 +228,17 @@ function servePassengers(passengers) {
 servePassengers(passengers);
 
 
-//Write your solutions for the remaining
-//three sort functions below.
+//Write your solutions for the remaining three sort functions below.
 function compareName(colaA, colaB) {
     if (colaA.name > colaB.name) {
         return 1;
     } else if (colaA.name === colaB.name) {
         return 0;
     } else {
-        return -1;
+        return - 1;
     }
 }
+
 function compareCalories(colaA, colaB) {
     if (colaA.calories > colaB.calories) {
         return 1;
@@ -238,6 +248,7 @@ function compareCalories(colaA, colaB) {
         return -1;
     }
 }
+
 function compareColor(colaA, colaB) {
     if (colaA.color > colaB.color) {
         return 1;
@@ -247,6 +258,7 @@ function compareColor(colaA, colaB) {
         return -1;
     }
 }
+
 products.sort(compareName);
 console.log("Products sorted by name:");
 printProducts(products);
