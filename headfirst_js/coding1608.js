@@ -68,18 +68,18 @@ let hiStr = sumTwoNumber(5, 10);
 //Task 5
 //Pass an array into function, Check if that array contains an element 0;
 
-let arr = [5, 6, 12, 13, 14, 0, 8];
+// let arr = [5, 6, 12, 13, 14, 0, 8];
 
-function zeroChecker(numberArray) {
-    for (let i = 0; i < numberArray.length; i = i + 1) {
-        //console.log(arr[i]);
-        if (arr[i] === 0) {
-            //console.log(`${i + 1} th element is 0`);
-        }
-    }
+// function zeroChecker(numberArray) {
+//     for (let i = 0; i < numberArray.length; i = i + 1) {
+//         //console.log(arr[i]);
+//         if (arr[i] === 0) {
+//             //console.log(`${i + 1} th element is 0`);
+//         }
+//     }
 
-}
-zeroChecker(arr);
+// }
+// zeroChecker(arr);
 
 //Task 6
 //find the sum of the elements of an array using function.
@@ -123,23 +123,23 @@ function elemInArrayzero(numberArray) {
 }
 
 
-elemInArrayzero(arrElem)
+// elemInArrayzero(arrElem)
 
 
-//hasOwnProperty()
-let buz = {
-    fog: 'stack'
-};
+// //hasOwnProperty()
+// let buz = {
+//     fog: 'stack'
+// };
 
-for (let name in buz) {
-    if (buz.hasOwnProperty(name)) {
-        console.log('this is fog (' +
-            name + ') for sure. Value: ' + buz[name]);
-    }
-    else {
-        console.log(name); // toString or something else
-    }
-    console.log(name);
-    console.log(buz);
-}
+// for (let name in buz) {
+//     if (buz.hasOwnProperty(name)) {
+//         console.log('this is fog (' +
+//             name + ') for sure. Value: ' + buz[name]);
+//     }
+//     else {
+//         console.log(name); // toString or something else
+//     }
+//     console.log(name);
+//     console.log(buz);
+// }
 
