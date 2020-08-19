@@ -120,6 +120,12 @@
 	
 	keypress: This event is generated
 	every time you press a key.
+	
+	/////For starters, it means that you can place function
+	//declarations anywhere in your code—at the top, at the bottom, in the middle—and
+	//invoke them wherever you like. Function declarations create 
+	//functions that are defined
+	//everywhere in your code (this is known as hoisting).
 
 
 	
