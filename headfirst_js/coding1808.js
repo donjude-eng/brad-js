@@ -123,7 +123,8 @@ function equalOrNot(number) {
             console.log(sampleArray1[i], sampleArray1[i] - 1)
         }
     }
-
 }
 
 //conequalOrNot(sampleArray1);
+
+

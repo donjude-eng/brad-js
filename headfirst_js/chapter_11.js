@@ -185,22 +185,82 @@ function whereAreYou() {
 }
 
 let result = whereAreYou();
-console.log(result);
+//console.log(result);
 
 
 // //Where things get interesting with lexical scope
-let justAVar = "Oh, don't you worry about it, I'm GLOBAL";
+// let justAVar = "Oh, don't you worry about it, I'm GLOBAL";
 
-function whereAreYou() {
-    let justAVar = "Just an every day LOCAL Three";
-    function inner() {
-        return justAVar;
-    }
-    return inner;
-}
+// function whereAreYou() {
+//     let justAVar = "Just an every day LOCAL Three";
+//     function inner() {
+//         return justAVar;
+//     }
+//     return inner;
+// }
 
-let innerFunction = whereAreYou();
-let result = innerFunction();
-console.log(result);
+// let innerFunction = whereAreYou();
+// let result = innerFunction();
+//console.log(result);
 
 
+//Using closures to implement a magic counter
+// let count = 0;
+
+// function counter(){
+//     count = count + 1;
+//     return count;
+// }
+
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+
+//Test drive your magic counter ??? I've doubt i this problem!!
+// function makeCounter() {
+//     let count = 0;
+//     function counter() {
+
+//         count = count + 1;
+//         return count;
+//     }
+//     console.log(count)
+//     return counter;
+
+// }
+
+// let doCount = makeCounter();
+// console.log(doCount());
+// console.log(doCount());
+// console.log(doCount());
+
+
+//Click me! without a closure
+
+// let count = 0;
+
+// window.onload = function () {
+//     let button = document.getElementById("clickme");
+//     button.onclick = handleClick;
+
+// };
+// function handleClick() {
+//     let message = "You clicked me ";
+//     let div = document.getElementById("message");
+//     count++;
+//     div.innerHTML = message + count + " times!";
+// }
+
+//Click me! with a closure
+window.onload = function () {
+    let count = 0;
+    let message = "You clicked me ";
+    let div = document.getElementById("message");
+    let button = document.getElementById("clickme");
+
+    button.onclick = function () {
+        count++;
+        div.innerHTML = message + count + " times!";
+    };
+};
