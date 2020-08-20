@@ -68,7 +68,7 @@ let arr4 = [10, 12, 15, 25, 35, 45, 65]
 
 function sumOfElementArray(number) {
     let sum = 0;
-    for(let i = 0; i < number.length; i++){
+    for (let i = 0; i < number.length; i++) {
         sum = sum + number[i];
     }
     return sum;
@@ -81,10 +81,10 @@ function sumOfElementArray(number) {
 
 let arr5 = [10, 12, 15, 25, 18, 14, 12, 9, 11];
 
-function multipleOf3And5(number){
-    for (let i = 0; i < number.length; i ++){
+function multipleOf3And5(number) {
+    for (let i = 0; i < number.length; i++) {
         if (number[i] % 3 === 0 && number[i] % 5 === 0) {
-            console.log(number[i])
+            //console.log(number[i])
         }
     }
 }
@@ -95,4 +95,35 @@ multipleOf3And5(arr5);
 
 //7. Declare 2 arrays of the same size and print the values of both using one for loop
 let sampleArray1 = [10, 12, 14, 25, 35, 55, 18];
-let sampleArray2 = []
+let sampleArray2 = [10, 18, 17, 12, 45, 25, 45];
+
+function valueOfArray(arr1, arr2) {
+    //console.log(arr1, arr2);
+    for (let i = 0; i < arr1.length; i++) {
+        if (sampleArray1[i] === sampleArray2[i]) {
+            console.log(sampleArray1[i]);
+            console.log(sampleArray2[i]);
+        }
+
+    }
+
+}
+valueOfArray(sampleArray1, sampleArray2);
+
+//8. Write a program to compare the current item in the array to the next item and print if they are equal or not
+
+//let sampleArray1 = [10, 18, 17, 12, 45, 25, 45];
+//index   0    1   2  3  4   5   6
+
+function equalOrNot(number) {
+    for (let i = 0; i < number.length; i++) {
+        //console.log(number[i]);
+
+        if (number[i] === number[i - 1]) {
+            console.log(sampleArray1[i], sampleArray1[i] - 1)
+        }
+    }
+
+}
+
+//conequalOrNot(sampleArray1);
