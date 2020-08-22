@@ -128,3 +128,6 @@ function equalOrNot(number) {
 //conequalOrNot(sampleArray1);
 
 
+//Program to print thr length of the array.
+
+
