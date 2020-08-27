@@ -256,8 +256,20 @@ master
 	console by logging the innerHTML property.
 	
 	The window object is built-in
-to JavaScript. It represents
-the browser window.
+	to JavaScript. It represents
+	the browser window.
+
+	1.4 Null It’s a value which represents “nothing”, “empty” or “value unknown”.
+
+	 let mark = null;
+	1.5 Undefined The meaning of undefined is “value is not assigned”. If a variable is declared, but not assigned, then its value is undefined:
+
+	 eg: let mark;
+	     console.log(mark);
+	Reference Data Types
+	Accessed by reference
+	Objects that are stored on the heap
+	A pointer to a location in memory
 
 
  ```
