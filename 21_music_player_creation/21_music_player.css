@@ -35,7 +35,7 @@ body {
   width: 110px;
 }
 
-.img-container::after {
+/* .img-container::after {
   content: '';
   background-color:#fff;
   border-radius: 50%;
@@ -46,14 +46,14 @@ body {
   height: 20px;
   transform: translate(-50%, 50%);
 
-}
+} */
 
 .img-container img {
   border-radius: 50%;
   object-fit: cover;
   height: 110px;
   width: inherit;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
   animation: rotate 3s linear infinite;
