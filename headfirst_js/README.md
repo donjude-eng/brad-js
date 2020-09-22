@@ -84,8 +84,50 @@
 	
 	
 	to Gind the last item of an array ---- myArray[myArray.length - 1];
-
 	
+	//CSS Positioning
+	Positioning allows you to specify an
+	exact position for an element. If an element
+	is positioned “relative”, then the element
+	is positioned based on its normal location
+	in the flow of the page. If an element is
+	positioned “absolute”, then that element is
+	positioned at a specific location, relative
+	to its most closely positioned parent.
+	Sometimes that’s the entire page, in which
+	case the position you specify could be its
+	top left position based on the corner of the
+	web browser. In our case, we’re positioning
+	the table and message area elements
+	absolutely, but in relation to the game board
+	(because the board is the most closely
+	positioned parent of the table and the
+	message area).
+	
+	
+	/////Typews of Events
+	Click : Get this event
+	when you click (or
+	tap) in a web page.
+	
+	load: The event you get when
+	the browser has completed
+	loading a web page.
+
+	mousemove: When you move your
+	mouse over an element,
+	you’ll generate this event.
+	
+	keypress: This event is generated
+	every time you press a key.
+	
+	/////For starters, it means that you can place function
+	//declarations anywhere in your code—at the top, at the bottom, in the middle—and
+	//invoke them wherever you like. Function declarations create 
+	//functions that are defined
+	//everywhere in your code (this is known as hoisting).
+
+
 	
 	
 

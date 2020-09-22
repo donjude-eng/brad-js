@@ -2,7 +2,7 @@
 
 body {
     background-color: #242333;
-
+    cursor: help;
 }
 
 .top-class h1{
@@ -85,7 +85,7 @@ content:"";
 .letter{
     font-weight: bold;
      list-style-type: none;
-     padding: 10px 20px;
+     padding: 10px 16px;
      border: 2px solid white;
      margin: 3px;
      box-shadow: 10px 10px 14px -6px rgba(0,0,0,0.75);
