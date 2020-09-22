@@ -1,3 +1,4 @@
+
 // const keyLetters = ['row1', 'row2', 'row3', 'row4', 'row5']
 // document.addEventListener('click' , switchRows)
 
@@ -18,4 +19,5 @@ function toggleRows(e) {
     e.preventDefault();
     document.getElementById('row1').value +='A';
     console.log('Pressed A')
-}
+};
+
