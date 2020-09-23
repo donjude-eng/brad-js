@@ -1,128 +1,128 @@
 02_JavaScript_Fundamentals
 # brad-js
 
-```
-06: Intro 
-master
+## 06: Introduction to Javascript
 
-Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
-2.array. objects
-3.console.error
-4.object,tables
- 02_JavaScript_Fundamentals
- 02_JavaScript_Fundamentals
+
+* Document.query selector ('h1'). style color (red) (numbers will be blue and string is black.
+1. array. objects
+2. console.error
+3. object,tables
+ * JavaScript_Fundamentals
+ * JavaScript_Fundamentals
 b: Variable
  a: We can reassign using variable var or let
-=======
-master
-07: Variable
- a: 2e can reassign using variable var or let
- master
- b:Variable name (letter, -, number and &.
 
- 08-Datatypes
- a - primitive data types
- b: Reference data types
- c: Arrays, object function data
+# Variables
+ 1. 2e can reassign using variable var or let
+ master
+ 3. Variable name (letter, -, number and &.
+
+# Datatypes
+ 1. - primitive data types
+ 2. Reference data types
+ 3. Arrays, object function data
  
- 09-Types conversion
- -->length property only works in string string to numbers.
- -->parseint
- -->parsefloat
+# Types conversion
+ - length property only works in string string to numbers.
+ - parseint
+ - parsefloat
  
- 10-Mathobject
- -->math.random (this will generate random numbers)
+* Mathobject
+ *math.random (this will generate random numbers)
  math.floor (math.floor (1*2)
  
-	 The Document Object Model, or DOM, is
-	the browser’s internal representation of your
-	web page.
+``The Document Object Model, or DOM, is
+the browser’s internal representation of your
+web page.``
  
  
-  ##The variable without equsl sign : We say optionally, because if you want, you can create a variable without
-	an initial value, and then assign it a value later. To create a variable
-	without an initial value, just leave off the assignment part, like this:
+* The variable without equsl sign : We say optionally, because if you want, you can create a variable without
+an initial value, and then assign it a value later. To create a variable
+without an initial value, just leave off the assignment part, like this:
 
-	##A variable can hold are numbers string and the bollean values.
+A variable can hold are numbers string and the bollean values.
 
-	##What’s a keyword?
-	A: A keyword is a reserved word in
-	JavaScript. JavaScript uses these reserved
-	words for its own purposes, and it would
-	be confusing to you and the browser if you
-	started using them for your variables.
+* What’s a keyword?
+A: A keyword is a reserved word in
+JavaScript. JavaScript uses these reserved
+words for its own purposes, and it would
+be confusing to you and the browser if you
+started using them for your variables.
 
-	##Q: What exactly is a block of code?
-	A: Syntactically, a block of code (which
-	we usually just call a block) is a set of
-	statements, which could be one statement,
-	or as many as you like, grouped together
-	between curly braces. Once you’ve got a
-	block of code, all the statements in that
-	block are treated as a group to be executed
-	together. For instance, all the statements
-	within the block in a while statement are
-	executed if the condition of the while is true.
-	The same holds for a block in an if or else if.  
-	eg {
-	}
+*Q: What exactly is a block of code?
+A: Syntactically, a block of code (which
+we usually just call a block) is a set of
+statements, which could be one statement,
+or as many as you like, grouped together
+between curly braces. Once you’ve got a
+block of code, all the statements in that
+block are treated as a group to be executed
+together. For instance, all the statements
+within the block in a while statement are
+executed if the condition of the while is true.
+The same holds for a block in an if or else if.*  
+eg {
+}
 
 
-		## What is psecdocode and how it works.
-		DECLARE three variables to hold the location of each cell of the ship. Let’s call them
-		location1, location2 and location3.
+``What is psecdocode and how it works.
+DECLARE three variables to hold the location of each cell of the ship. Let’s call them
+location1, location2 and location3.``
 
-	 11-string operations
+ 11-string operations
 
-	 substring --This will take the first line in the string.
-	 splice --This will take out the value to a string.
-	split -- This can be split the element with coma.
-	include --If something is available in the string.
-	 chart -- Will get the element using the chart.
+* substring --This will take the first line in the string.
+* splice --This will take out the value to a string.
+* split -- This can be split the element with coma.
+* include --If something is available in the string.
+* chart -- Will get the element using the chart.
 
-	 12--Template literals
-	 --Ternary operator
-	 -- Blockquote
+ * Template literals
+ 1. Ternary operator
+ 2. Blockquote
 
-	 13--Array method
-	 --ISarray (This will show the word inline array)
-	 --for loops works in object
+ * Array method
+ 1. ISarray (This will show the word inline array)
+ 2. for loops works in object
 
-	 14--Object literals
-	 --for loops will work in object
+* Object literals
+ 1. for loops will work in object
 
-	 15--Date and times
-	 --Date would be 0 based
-	 --Today.getday
-	 --doubt(get-date)
+* Date and times
+ 1. Date would be 0 based
+ 2. Today.getday
+ 3. doubt(get-date)
 
-	 16 -- Comparison operator
-	 --Don't matter is it is string or an number
-	 =assignment operator
-	 ===comparison operator
-	 logical operator
+* Comparison operator
+ 1. Don't matter is it is string or an number
+ 2. assignment operator
+ 3. comparison operator
+ 4. logical operator
 
-	 17--switches
-	 --switch can be used instead of else statement
-	 Day and date
+* switches
+1. switch can be used instead of else statement
 
-	 18--function
-	 function declaration
-	 ananymouus function
-	 invokable function
 
-	 19--General loops
-	  a. for loop
-	 b. for each
-	 c. ID map
+* function
+ 1. function declaration
+ 2. ananymouus function
+ 3. invokable function
 
-	  20 --Window object
-	 a- Document object model
-	 --Select element
-	 --style
-	 --changes mode
-	 --This is all for working with the UI.
-	 The window object is the part of client side.
+* General loops
+ 1. for loop
+ 2. for each
+ 3. ID map
+
+ * Window object
+  - Document object model
+  -Select element
+  -style
+  -changes mode
+  -This is all for working with the UI.
+  - The window object is the part of client side.
+  
+  ```
 
 	 ---Javascript runtime runs as a standalone process in our machine or in our computer.
 	 ---Computer systems is the environment --In nodejs
