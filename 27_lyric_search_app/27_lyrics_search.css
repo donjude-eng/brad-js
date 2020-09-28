@@ -100,10 +100,14 @@ ul.songs li {
 }
 
 .container {
-    margin: 30px auto;
+    margin:  auto;
     max-width: 100%;
     width: 500px;
     text-align: center;
+    transition: all 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+
 }
 
 .container h2{
