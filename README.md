@@ -28,7 +28,7 @@ b: Variable
  - parseint
  - parsefloat
  
-* Mathobject
+ * Mathobject
  *math.random (this will generate random numbers)
  math.floor (math.floor (1*2)
  
@@ -137,7 +137,7 @@ map() ``
 
 
 ## Map (Method)
-`The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
 const array1 = [1, 4, 9, 16];
 * pass a function to map 
 const map1 = array1.map(x => x * 2);
@@ -158,13 +158,13 @@ The forEach() method executes a provided function once for each array element.
 
 **Difference between map() and forEach
 
-*The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
+* The map() method creates a new array populated with the results of calling a provided function on every element in the calling array.
 The forEach() method executes a provided function once for each array element.
 forEach() does not mutate the array on which it is called sort()
 
 ## Sort (method)
 
-*The sort() method sorts the elements of an array in place and returns the sorted array.
+* The sort() method sorts the elements of an array in place and returns the sorted array.
 The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
@@ -179,7 +179,7 @@ filter()
 ```
 
 ## Filter (method)
-*The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+* The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 
 const result = words.filter(word => word.length > 6);
@@ -189,7 +189,7 @@ console.log(result);
 reduce()
 
 ## Reduce (Method)
-*The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
+* The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in single output value.
 const array1 = [1, 2, 3, 4];
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
