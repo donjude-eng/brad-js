@@ -257,7 +257,24 @@ console by logging the innerHTML property.``
 to JavaScript. It represents
 the browser window.
 
-1.4 Null It’s a value which represents “nothing”, “empty” or “value unknown”.
+1.4 Null It’s a value which represents “nothing”,
+
+
+var numbers = [3, -7, 10, 8, 15, 2];
+
+// Defining function to find maximum value
+function findMax(array) {
+    return Math.max.apply(null, array);
+}
+
+// Defining function to find minimum value
+function findMin(array) {
+    return Math.min.apply(null, array);
+}
+
+alert(findMax(numbers)); // Outputs: 15
+alert(findMin(numbers));
+ “empty” or “value unknown”.
 
  let mark = null;
 1.5 Undefined The meaning of undefined is “value is not assigned”. If a variable is declared, but not assigned, then its value is undefined:
